@@ -1,4 +1,23 @@
-# Architecting a NL2SQL Solution for inmense Enterprise Databases.  
+<table>
+  <tr>
+    <td  width="130">
+      <a href="https://amzn.to/4eanT1g">
+        <img src="https://github.com/peremartra/Large-Language-Model-Notebooks-Course/blob/main/img/Large_Language_Models_Projects_Book.jpg" height="160" width="104">
+      </a>
+    </td>
+    <td>
+      <p>
+        This is the unofficial repository for the book: 
+        <a href="https://amzn.to/4eanT1g"> <b>Large Language Models:</b> Apply and Implement Strategies for Large Language Models</a> (Apress).
+        The book is based on the content of this repository, but the notebooks are being updated, and I am incorporating new examples and chapters.
+        If you are looking for the official repository for the book, with the original notebooks, you should visit the 
+        <a href="https://github.com/Apress/Large-Language-Models-Projects">Apress repository</a>, where you can find all the notebooks in their original format as they appear in the book. Buy it at: <a href="https://amzn.to/3Bq2zqs">[Amazon]</a> <a href="https://link.springer.com/book/10.1007/979-8-8688-0515-8">[Springer]</a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+# Architecting a NL2SQL Solution for immense Enterprise Databases.  
 Creating a Natural Language to SQL conversion system capable of operating on databases with a complex structure composed of hundreds of tables with interconnections presents a significant challenge. 
 
 One of the primary issues with such a system is that the model needs to receive the database structure to target in each prompt. As the structure grows, so does the demand for the model to comprehend it, necessitating larger and larger models. These extensive models might be overkill for handling relatively simple queries involving only one or two tables.
@@ -190,7 +209,7 @@ A simple function that receives a text with the request to the database and nume
 * order: A sentence indicating what do you want from the Database"
 * model: O-Indicates that you qwant the system to choose the best model. 1-SQLCoder. 2-GPT4.0.
 
-Why are we returning the model used in the SQL generation? Easy, just in case the SQL is incorrect and can't be executed you can try the same cal using the other Model. 
+Why are we returning the model used in the SQL generation? Easy, just in case the SQL is incorrect and can't be executed you can try the same call using the other Model. 
 
 # Conclusion. 
 This solution is just a recommendation aimed at addressing the issue of prompt size in SQL code generation for databases that consist of many tables.
