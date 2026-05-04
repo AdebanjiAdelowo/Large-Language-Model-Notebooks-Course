@@ -1,1 +1,35 @@
 .env
+
+# Model weights
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+distilled_model/
+student_model/
+
+# Binary data / embeddings
+*.pkl
+
+# Databases
+**/chromadb/
+**/chroma_news/
+**/chromadb_medical/
+
+# Gradio cache
+**/.gradio/
+
+# Large data archives
+*.zip
+*.csv
+
+# Generated artifacts (re-runnable from notebooks)
+*.png
+*.json
+articles.csv
+mit-ai-news-published-till-2023.zip
+labelled_newscatcher_dataset.zip
+topic-labeled-news-dataset.zip
+
+# Claude Code project files
+.claude/
